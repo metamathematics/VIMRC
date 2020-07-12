@@ -1,7 +1,5 @@
 # VIMRC
 
-This is my .vimrc file that I was for the VIM text editor.
+The .vimrc file that I use for the VIM text editor.
 
-This is very much a work in progress, as I am new to vim.
-
-I will improve this file as I learn more.
+This file will be improved as I learn more.
