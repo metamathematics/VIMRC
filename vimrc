@@ -29,3 +29,9 @@ inoremap [] []
 inoremap { {}<left>
 inoremap {<CR> {<CR><CR>}<ESC>ki<TAB>
 inoremap /*<CR> /*<CR><CR><SPACE>*/<ESC>ki
+
+" Java's main method
+inoremap psvm<CR> public static void main(String[] args) {<CR><CR>}<ESC>ki<TAB>
+
+" JavaFX's start method
+inoremap pvs<CR> @Override<CR>public void start(Stage primaryStage) {<CR><CR>}<ESC>ki<TAB>
