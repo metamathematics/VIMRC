@@ -19,8 +19,6 @@ nmap <C-N><C-N> :set invnumber<CR>
 
 " Automatic closing characters. 
 " To avoid this behavior, type Ctrl-V before typing the mapped char
-inoremap " ""<left>
-inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap () ()
 inoremap (; ();<left><left>
@@ -28,7 +26,8 @@ inoremap [ []<left>
 inoremap [] []
 inoremap { {}<left>
 inoremap {<CR> {<CR><CR>}<ESC>ki<TAB>
-inoremap /*<CR> /*<CR><CR><SPACE>*/<ESC>ki
+inoremap /** /**   */<left><left><left><left>
+inoremap /**<CR> /**<CR><SPACE><SPACE>*/<ESC>ki<right><TAB>
 
 " Java's main method
 inoremap psvm<CR> public static void main(String[] args) {<CR><CR>}<ESC>ki<TAB>
