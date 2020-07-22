@@ -19,6 +19,8 @@ nmap <C-N><C-N> :set invnumber<CR>
 
 " Automatic closing characters. 
 " To avoid this behavior, type Ctrl-V before typing the mapped char
+inoremap "" ""<left>
+inoremap '' ''<left>
 inoremap ( ()<left>
 inoremap () ()
 inoremap (; ();<left><left>
