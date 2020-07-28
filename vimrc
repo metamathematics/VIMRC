@@ -29,7 +29,7 @@ inoremap [ []<left>
 inoremap [] []
 inoremap { {}<left>
 inoremap {<CR> {<CR><CR>}<ESC>ki<TAB>
-inoremap /** /**   */<left><left><left><left>
+inoremap /** /**  */<left><left><left>
 inoremap /**<CR> /**<CR><SPACE><SPACE>*/<ESC>ki<right><TAB>
 
 " Java's main method
