@@ -5,8 +5,9 @@ set mouse=a
 set autoindent
 
 " Indention setting for using hard tabs for indent. Displays tabs as two characters wide
-set shiftwidth=2
 set tabstop=2
+set shiftwidth=2
+set expandtab
 
 " Stop certain movements from always going to the first character of a line
 set nostartofline
