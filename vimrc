@@ -33,7 +33,7 @@ inoremap /** /**  */<left><left><left>
 inoremap /**<CR> /**<CR><SPACE><SPACE>*/<ESC>ki<right><TAB>
 
 " Java's main method
-inoremap psvm<CR> public static void main(String[] args) {<CR><CR>}<ESC>ki<TAB>
+inoremap psvm<CR> /** The main method. */<CR>public static void main(String[] args) {<CR><CR>}<ESC>ki<TAB>
 
 " JavaFX's start method
-inoremap pvs<CR> @Override<CR>public void start(Stage primaryStage) {<CR><CR>}<ESC>ki<TAB>
+inoremap pvs<CR> /** Overrides the start method from the Application class. */<CR>@Override<CR>public void start(Stage primaryStage) {<CR><CR>}<ESC>ki<TAB>
