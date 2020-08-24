@@ -32,8 +32,19 @@ inoremap {<CR> {<CR><CR>}<ESC>ki<TAB>
 inoremap /** /**  */<left><left><left>
 inoremap /**<CR> /**<CR><SPACE><SPACE>*/<ESC>ki<right><TAB>
 
+" HTML commands
+inoremap <html><CR> <html><CR><CR></html><ESC>ki
+inoremap <head><CR> <html><CR><CR></head><ESC>ki
+inoremap <body><CR> <html><CR><CR></body><ESC>ki
+inoremap !DO<TAB> !DOCTYPE
+
 " Java's main method
 inoremap psvm<CR> /** The main method. */<CR>public static void main(String[] args) {<CR><CR>}<ESC>ki<TAB>
 
 " JavaFX's start method
 inoremap pvs<CR> /** Overrides the start method from the Application class. */<CR>@Override<CR>public void start(Stage primaryStage) {<CR><CR>}<ESC>ki<TAB>
+
+" Java print statements
+inoremap sop<TAB> System.out.print();<left><left>
+inoremap sopl<TAB> System.out.println();<left><left>
+inoremap sopf<TAB> System.out.printf("",);<left><left>
