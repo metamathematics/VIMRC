@@ -54,6 +54,8 @@ inoremap <h6><TAB> <h6></h6><left><left><left><left><left>
 inoremap <p<TAB> <p</p><left><left><left><left>
 inoremap <a<TAB> <a ></a><left><left><left><left><left>
 
+" C's main method
+inoremap main<CR> int main(int argc, char *argv[])<CR>{<CR><CR>}<ESC><UP>i<TAB>
 
 " Java's main method
 inoremap psvm<CR> /** The main method. */<CR>public static void main(String[] args) {<CR><CR>}<ESC>ki<TAB>
