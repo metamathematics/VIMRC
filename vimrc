@@ -4,10 +4,17 @@ set mouse=a
 " Keep the same indent as the line you're currently on.
 set autoindent
 
-" Indention setting for using hard tabs for indent. Displays tabs as two characters wide
-set tabstop=2
-set shiftwidth=2
-set expandtab
+" Set tab and indent to 4 spaces
+set tabstop=4
+set shiftwidth=4
+
+" If file is not Makefile, convert tab characters to white space characters
+let _curfile = expand("%:t")
+if _curfile =~ "Makefile"
+  set noexpandtab
+else
+  set expandtab
+endif
 
 " Stop certain movements from always going to the first character of a line
 set nostartofline
@@ -28,7 +35,7 @@ inoremap (; ();<left><left>
 inoremap [ []<left>
 inoremap [] []
 inoremap { {}<left>
-inoremap {<CR> {<CR><CR>}<ESC>ki<TAB>
+inoremap {<CR> {<CR>}<ESC>:><CR>i<CR><ESC>:<<CR>i<up><TAB>
 inoremap /** /**  */<left><left><left>
 inoremap /**<CR> /**<CR><SPACE><SPACE>*/<ESC>ki<right><TAB>
 
