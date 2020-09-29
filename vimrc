@@ -35,7 +35,8 @@ inoremap (; ();<left><left>
 inoremap [ []<left>
 inoremap [] []
 inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>:><CR>i<CR><ESC>:<<CR>i<up><TAB>
+inoremap {<CR> {<CR><CR>}<ESC><UP>i<TAB>
+inoremap /* /* */<left><left><left>
 inoremap /** /**  */<left><left><left>
 inoremap /**<CR> /**<CR><SPACE><SPACE>*/<ESC>ki<right><TAB>
 
@@ -58,10 +59,10 @@ inoremap <a<TAB> <a ></a><left><left><left><left><left>
 inoremap main<CR> int main(int argc, char *argv[])<CR>{<CR><CR>}<ESC><UP>i<TAB>
 
 " Java's main method
-inoremap psvm<CR> /** The main method. */<CR>public static void main(String[] args) {<CR><CR>}<ESC>ki<TAB>
+inoremap psvm<CR> /** The main method. */<CR>public static void main(String[] args) {<CR><CR>}<ESC><UP>i<TAB>
 
 " JavaFX's start method
-inoremap pvs<CR> /** Overrides the start method from the Application class. */<CR>@Override<CR>public void start(Stage primaryStage) {<CR><CR>}<ESC>ki<TAB>
+inoremap pvs<CR> /** Overrides the start method from the Application class. */<CR>@Override<CR>public void start(Stage primaryStage) {<CR><CR>}<ESC><UP>i<TAB>
 
 " Java print statements
 inoremap sop<TAB> System.out.print();<left><left>
