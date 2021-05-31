@@ -38,7 +38,7 @@ inoremap { {}<left>
 inoremap {<CR> {<CR><CR>}<ESC><UP>i<TAB>
 inoremap /* /* */<left><left><left>
 inoremap /** /**  */<left><left><left>
-inoremap /**<CR> /**<CR><SPACE><SPACE>*/<ESC>ki<right><TAB>
+inoremap /**<CR> /*************************************************************<CR>//<CR>//<CR>//<CR>//<CR>//<CR>//<CR>//<CR>//<CR>**************************************************************/
 
 " HTML commands
 inoremap <!DO<TAB> <!DOCTYPE ><left>
@@ -56,7 +56,7 @@ inoremap <p<TAB> <p</p><left><left><left><left>
 inoremap <a<TAB> <a ></a><left><left><left><left><left>
 
 " C's main method
-inoremap main<CR> int main(int argc, char *argv[])<CR>{<CR><CR>}<ESC><UP>i<TAB>
+inoremap main<CR> int main(int argc, char *argv[])<CR>{<CR><CR>}<ESC><UP>i<TAB>return 0;<ESC><UP>a<CR><TAB>
 
 " Java's main method
 inoremap psvm<CR> /** The main method. */<CR>public static void main(String[] args) {<CR><CR>}<ESC><UP>i<TAB>
